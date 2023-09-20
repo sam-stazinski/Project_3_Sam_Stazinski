@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="questionPrompt" type="id" />
+    <item name="userAnswer" type="id" />
+    <item name="doneButton" type="id" />
+</resources>

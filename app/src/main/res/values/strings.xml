@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project 3</string>
+    <string name="hated_math_image">Hated Math Image</string>
+    <string name="number_of_questions">%d</string>
+    <string name="math_problem_text">%d %c %d</string>
+    <string name="ending_difficulty">Difficulty: %s</string>
+    <string name="ending_operation">Operation: %c</string>
+    <string name="ending_score">%d/%d</string>
+
+</resources>
