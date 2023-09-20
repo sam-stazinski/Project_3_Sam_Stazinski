@@ -1,6 +1,7 @@
 package com.example.project3
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -67,6 +68,13 @@ class MathQuestionActivity : AppCompatActivity() {
         } else {
             Log.d("MathApp", "All questions answered. Correct Answers: $correctAnswers out of $numOfQuestions")
             // Show results or navigate to a result screen
+            val intent = Intent(this, ResultsActivity::class.java)
+            intent.putExtra("difficulty", difficulty) // 'selectedDifficulty' is the difficulty chosen by the user
+            intent.putExtra("operation", operation) // 'selectedOperation' is the operation chosen by the user
+            intent.putExtra("numOfQuestions", numOfQuestions)
+            intent.putExtra("questionsAnswered", questionsAnswered)
+            intent.putExtra("correctAnswers", correctAnswers)
+            startActivity(intent)
 
         }
     }

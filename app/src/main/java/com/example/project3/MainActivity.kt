@@ -91,7 +91,6 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("questionsAnswered", 0)
         intent.putExtra("correctAnswers", 0)
         startActivity(intent)
-        Toast.makeText(this, "Ptest.", Toast.LENGTH_SHORT).show()
     }
 
     fun increaseQuestions(view: View) {
