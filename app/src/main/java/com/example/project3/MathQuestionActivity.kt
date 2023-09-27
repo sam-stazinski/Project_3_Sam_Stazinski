@@ -2,14 +2,19 @@ package com.example.project3
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.media.AudioManager
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.project3.R.layout.question_screen
 import java.util.Random
+import android.media.MediaPlayer
+import android.media.ToneGenerator
+
 
 class MathQuestionActivity : AppCompatActivity() {
 
@@ -97,9 +102,18 @@ class MathQuestionActivity : AppCompatActivity() {
 
         if (userAnswer == currentAnswer) {
             correctAnswers++
+            Toast.makeText(this, "Correct. Good work!", Toast.LENGTH_SHORT).show()
             Log.d("MathApp", "User's answer is correct!")
+
+            // Play high-pitched beep for correct answer
+            ToneGenerator(AudioManager.STREAM_MUSIC, ToneGenerator.MAX_VOLUME).startTone(ToneGenerator.TONE_DTMF_9, 200)
         } else {
+            Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show()
             Log.d("MathApp", "User's answer is incorrect. User's Answer: $userAnswer, Correct Answer: $currentAnswer")
+
+            // Play low-pitched beep for wrong answer
+            ToneGenerator(AudioManager.STREAM_MUSIC, ToneGenerator.MAX_VOLUME).startTone(ToneGenerator.TONE_DTMF_0, 200)
+
         }
 
         questionsAnswered++
