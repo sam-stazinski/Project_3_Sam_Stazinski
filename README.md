@@ -26,7 +26,7 @@ The following **extensions** are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='walkthrough.gif' title='Video Walkthrough' width='50%' alt='Video Walkthrough' />
+<img src='project 4.gif' title='Video Walkthrough' width='50%' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -48,5 +48,6 @@ I also had some trouble finding the best way to iterate through multiple questio
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
+    ![project 4](https://github.com/sam-stazinski/Project_3_Sam_Stazinski/assets/62117671/68dc3a35-6cc8-419f-bd5a-a185a9452f4a)
+See the License for the specific language governing permissions and
     limitations under the License.
