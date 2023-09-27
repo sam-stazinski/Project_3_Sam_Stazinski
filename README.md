@@ -1,6 +1,7 @@
 # Project_3_Sam_stazinski
 
 A fun Android Application to practice quick math on the go. Practice addition, subtraction, multiplication, and division on three different difficulty
+Project 4 added functionality to the existing code base
 
 ## Functionality 
 
@@ -11,12 +12,15 @@ The following **required** functionality is completed:
 * [x] Once the user starts the test, they are promted with random math questions, all with the operation they chose
 * [x] Easy will have each of the operand below 10, medium below 25, and hard less than 50
 * [x] The user also gets to see fun images while they work
-* [x] After the user answers all the questions they get a results screen, where they can see how they did, and try again
+* [x] After the user answers all the questions they go back to the home screen, with a personalized message based on how they did
+* [x] Toast popups that tell you if you got a specific question correct
+* [x] Two differet sounds that play when you answer a question, depending on if you got the quesion right or wrong
 
 The following **extensions** are implemented:
 
 * Clearing out the answer text box after an answer is submited
 * Funny messages depending on how well the user did
+* 11 unique messages based on the % that the user got correct
 
 ## Video Walkthrough
 
