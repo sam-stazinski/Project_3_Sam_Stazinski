@@ -26,8 +26,7 @@ The following **extensions** are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='project 4.gif' title='Video Walkthrough' width='50%' alt='Video Walkthrough' />
-
+![project 4](https://github.com/sam-stazinski/Project_3_Sam_Stazinski/assets/62117671/a8e4415d-6ebc-42ec-95bf-7f767eb9a8f2)
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
