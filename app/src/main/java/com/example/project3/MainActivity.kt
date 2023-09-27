@@ -8,6 +8,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import android.content.Intent
+import android.graphics.Color
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
@@ -36,6 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         val difficultyRadioGroup: RadioGroup = findViewById(R.id.difficultyRadioGroup)
         val operationRadioGroup: RadioGroup = findViewById(R.id.operationRadioGroup)
+        val feedbackTextView: TextView = findViewById(R.id.feedback)
+
+        val feedback = intent.getStringExtra("feedback")
+        val feedbackColor = intent.getStringExtra("feedbackColor")
+        feedbackTextView.text = feedback
+        //feedbackTextView.setTextColor(Color.parseColor(feedbackColor))
 
         // Listener for the difficulty radio group
         difficultyRadioGroup.setOnCheckedChangeListener { _, checkedId ->
@@ -110,5 +117,7 @@ class MainActivity : AppCompatActivity() {
         val formattedText = getString(R.string.number_of_questions, numberOfQuestions)
         questionsTextView.text = formattedText
     }
+
+
 
 }
